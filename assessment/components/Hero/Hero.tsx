@@ -6,8 +6,8 @@ import ClassLabels from "./ClassLabels"
 
 export default function Hero() {
     return (
-        <div className="relative flex justify-center px-[5%] w-full h-full">
-            <div className=" flex flex-col sm:flex-row w-full xl:w-[1530px] h-[80vh] sm:h-screen flex py-[60px] md:py-[150px] justify-between ">
+        <section id="hero" className="relative flex justify-center px-[5%] w-full h-full">
+            <div className=" flex flex-col sm:flex-row w-full xl:w-[1530px] h-[80vh] sm:h-screen flex py-[60px] md:pt-[150px] justify-between ">
                 <div className="flex flex-col md:flex-col tracking-tighter leading-none gap-4 max-w-[700px]">
                     <h2 className="z-10 text-[32px] md:text-[64px] tracking-tighter leading-none uppercase">
                         COPY TRADING WITH BACKWELL INVEST
@@ -19,7 +19,7 @@ export default function Hero() {
                         alt="image of product"
                         fill
                         className="object-contain object-top scale-85 overflow-hidden pointer-events-none"
-                        style={{ objectPosition: "40% 40%" }}
+                        style={{ objectPosition: "40% 20%" }}
                     />
                 </div>
 
@@ -44,6 +44,6 @@ export default function Hero() {
 
 
             </div>
-        </div>
+        </section>
     )
 }
