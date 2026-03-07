@@ -10,7 +10,8 @@ $white: #fefefe;
 
 html, body {
     background: $bg;
-    margin:0%
+    margin:0%;
+    padding:0%;
 }
 
 nav {
@@ -22,6 +23,7 @@ nav {
     background : $white;
     color: $light-blue;
     font-weight: bold; 
+    padding:2% 5%;
 }
 
 .promotionCounter{
@@ -36,7 +38,7 @@ nav {
     border-radius: 6px;
 }
 
-#hero{
-
+h2{
+    color:$white
 }
 
