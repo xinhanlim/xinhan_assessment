@@ -28,15 +28,15 @@ export default function Hero() {
                     <div className="z-10 flex flex-col md:flex-col tracking-tighter leading-none gap-4 max-w-[700px]">
 
                         <h1 className=" text-[32px] md:text-[64px] tracking-tighter leading-none uppercase ">
-                            Choose & TradeReady-To-Go
-                            <span className="relative inline-block gap-2">
-                                Strategies
+                            Choose & Trade 
+                            <span className="z-20 relative inline-block gap-2  ">
+                                Ready-To-Go Strategies
                                 <Image
                                     src="/images/regular.png"
                                     alt="photo of regular"
                                     width={80}
                                     height={80}
-                                    className="absolute -right-20 top-10 -translate-y-1/2 rotate-[-25deg] pointer-events-none"
+                                    className="z-10 absolute right-0 top-6 md:-right-20 md:top-10 -translate-y-1/2 rotate-[-25deg] pointer-events-none"
                                 />
                             </span>
                         </h1>
