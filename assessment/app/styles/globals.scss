@@ -6,6 +6,7 @@ $gold: #f2df79;
 $orange: #F37406;
 $bg: #3A53BA;
 $white: #fefefe;
+$grey:#d8d8d8;
 
 
 html, body {
@@ -32,7 +33,7 @@ nav {
 }
 
 .cta-register{
-    padding: 8px 16px;
+    padding: 16px 16px;
     color: $light-blue;
     background: $white;
     border-radius: 6px;
@@ -46,3 +47,7 @@ p{
     color:$white
 }
 
+.information{
+    color:$grey;
+    font-style: italic;
+}
