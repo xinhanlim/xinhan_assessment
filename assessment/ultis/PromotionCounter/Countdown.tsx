@@ -40,14 +40,14 @@ export default function Countdown({ endDate }: CountdownProps) {
 
     return (
         <div id="promotion" className="flex flex-col items-center py-4 tracking-tighter leading-none">
-            <p className="">PROMOTION ENDS IN </p>
+            <h5 className="">PROMOTION ENDS IN </h5>
             <div className="flex flex-row gap-2 py-2 promotionCounter">
                 <Counter amount={timeLeft.days} format="DAYS" />
-                <p>:</p>
+                <h5>:</h5>
                 <Counter amount={timeLeft.hours} format="HOURS" />
-                <p>:</p>
+                <h5>:</h5>
                 <Counter amount={timeLeft.minutes} format="MINS" />
-                <p>:</p>
+                <h5>:</h5>
                 <Counter amount={timeLeft.seconds} format="SECOND" />
             </div>
 
