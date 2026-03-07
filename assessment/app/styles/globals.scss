@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+$dark-blue: #01f2f2;
+$light-blue: #112a4d;
+$gold: #f2df79;
+$orange: #F37406;
+$bg: #3A53BA;
+$white: #fefefe;
+
+
+html, body {
+    background: $bg;
+    margin:0%
+}
+
+nav {
+    background: $light-blue;
+    color: $white;
+}
+
+#promotion { 
+    background : $white;
+    color: $light-blue;
+    font-weight: bold; 
+}
+
+.promotionCounter{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cta-register{
+    padding: 8px 16px;
+    color: $light-blue;
+    background: $white;
+    border-radius: 6px;
+}
+
