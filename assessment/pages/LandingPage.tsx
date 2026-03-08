@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import Counter from "@/ultis/PromotionCounter/Countdown"
 import Hero from "@/components/Hero/Hero";
-import AppInstall from "@/components/Application/AppInstall";
+import Banner from "@/components/Banner/Banner";
 
 export default function LandingPage() {
     return (
@@ -11,7 +11,7 @@ export default function LandingPage() {
             <Navbar />
             <Counter endDate="14 Mar, 2026" />
             <Hero/>
-            <AppInstall/>
+            <Banner/>
         </main>
     )
 }
