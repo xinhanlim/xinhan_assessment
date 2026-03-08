@@ -8,7 +8,7 @@ import RightArrow from "../IconSVG/Arrow"
 export default function Hero() {
     return (
         <section id="hero" className="relative flex justify-center px-[5%] w-full h-full">
-            <div className=" flex flex-col sm:flex-row w-full xl:w-[1520px] h-[800px] sm:h-screen flex py-[60px] md:pt-[150px] justify-between ">
+            <div className=" flex flex-col sm:flex-row w-full xl:w-[1520px] h-[900px] sm:h-[1000px] flex py-[60px] md:pt-[150px] justify-between ">
                 <div className="relative flex flex-col md:flex-col tracking-tighter leading-none gap-4 max-w-[700px]">
                     <h1 className="z-10 text-[32px] md:text-[64px] tracking-tighter leading-none uppercase">
                         COPY TRADING WITH BACKWELL INVEST
@@ -27,7 +27,7 @@ export default function Hero() {
                 <div className="flex flex-col gap-20 justify-end">
                     <div className="z-10 flex flex-col md:flex-col tracking-tighter leading-none gap-4 max-w-[700px]">
 
-                        <h1 className=" text-[32px] md:text-[64px] tracking-tighter leading-none uppercase ">
+                        <h2 className=" text-[32px] md:text-[64px] tracking-tighter leading-none uppercase ">
                             Choose & Trade
                             <span className="z-20 relative inline-block gap-2  ">
                                 Ready-To-Go Strategies
@@ -39,7 +39,7 @@ export default function Hero() {
                                     className="z-10 absolute right-0 top-6 md:-right-20 md:top-10 -translate-y-1/2 rotate-[-25deg] pointer-events-none"
                                 />
                             </span>
-                        </h1>
+                        </h2>
                         <div className="flex flex-col gap-8">
                             <p className="sm:text-[18px]">Browse and copy hundreds of investment strategies developed by master traders! Whether you are a pro or beginner, you can now trade quicker and more confidently.</p>
                             <div className="flex flex-row flex-wrap gap-2">
