@@ -26,7 +26,7 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-col gap-20 justify-end">
                     <div className="z-10 flex flex-col xl:flex-col tracking-tighter leading-none gap-4 2xl:max-w-[700px] ">
-                        <h2 className=" text-[32px] sm:text-[50px] md:text-[64px] tracking-tighter leading-none uppercase flex flex-col">
+                        <h1 className=" text-[32px] sm:text-[50px] md:text-[64px] tracking-tighter leading-none uppercase flex flex-col">
                             Choose & Trade
                             <span className="z-20 relative inline-block gap-2 w-fit ">
                                 Ready-To-Go Strategies
@@ -39,7 +39,7 @@ export default function Hero() {
                                     className="z-10 absolute -right-0 -top-8 sm:-right-20 sm:top-7 -translate-y-1/2 rotate-[-25deg] pointer-events-none"
                                 />
                             </span>
-                        </h2>
+                        </h1>
                         <div className="flex flex-col gap-8">
                             <p className="sm:text-[18px]">Browse and copy hundreds of investment strategies developed by master traders! Whether you are a pro or beginner, you can now trade quicker and more confidently.</p>
                             <div className="flex flex-row flex-wrap gap-2">
