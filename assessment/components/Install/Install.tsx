@@ -32,7 +32,7 @@ export default function Install() {
                                     src={stepsData[currentIndex].image}
                                     alt={`Step ${currentIndex + 1}`}
                                     fill
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain px-8 py-8 "
                                     loading="lazy"
                                 />
                             </div>
