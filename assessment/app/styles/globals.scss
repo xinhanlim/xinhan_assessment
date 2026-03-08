@@ -46,7 +46,7 @@ nav {
 }
 
 .promotionCounter{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     font-family: $font-semi;
 }
@@ -110,6 +110,11 @@ p{
 .installBgSection{
     background: $light-blue ;
 }
+
+.installSection{
+    background: $bg ;
+}
+
 
 li {
   border-bottom: 1px solid #fefefe;
