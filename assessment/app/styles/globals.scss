@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "RotisBold";
+    src: url("/fonts/ATRotisSemiSans.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "RotisSemiBold";   
+    src: url("/fonts/ATRotisSemiSans.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 $dark-blue: #01f2f2;
 $light-blue: #112a4d;
 $gold: #f2df79;
@@ -7,6 +23,8 @@ $orange: #F37406;
 $bg: #3A53BA;
 $white: #fefefe;
 $grey:#d8d8d8;
+$font-bold: "RotisBold", sans-serif;
+$font-semi: "RotisSemiBold", sans-serif;
 
 
 html, body {
@@ -30,6 +48,7 @@ nav {
 .promotionCounter{
     font-size: 24px;
     font-weight: 600;
+    font-family: $font-semi;
 }
 
 .cta-register{
@@ -37,14 +56,22 @@ nav {
     color: $light-blue;
     background: $white;
     border-radius: 6px;
+    font-family: $font-semi;
 }
 
 h1{
-    color:$white
+    color:$white;
+    font-family: $font-bold;
+}
+
+h2{
+    color:$white;
+    font-family: $font-bold;
 }
 
 p{
-    color:$white
+    color:$white;
+    font-family: $font-semi;
 }
 
 .information{
@@ -66,10 +93,11 @@ p{
   display: flex;
   width: max-content;
   animation: bannerCarousel 180s linear infinite;
-  color: $bg;
+  color: $light-blue;
   background: $white;
-  padding: 16px 16px;
-  font-size: 64px;
   font-weight: 800;
+}
 
+#features{
+    background: $light-blue;
 }
