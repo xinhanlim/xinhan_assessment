@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Counter from "@/ultis/PromotionCounter/Countdown"
 import Hero from "@/components/Hero/Hero";
 import Banner from "@/components/Banner/Banner";
+import Features from "@/components/Features/Features";
 
 export default function LandingPage() {
     return (
@@ -12,6 +13,7 @@ export default function LandingPage() {
             <Counter endDate="14 Mar, 2026" />
             <Hero/>
             <Banner/>
+            <Features/>
         </main>
     )
 }
