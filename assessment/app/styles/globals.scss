@@ -69,6 +69,7 @@ h2{
     font-family: $font-bold;
 }
 
+
 p{
     color:$white;
     font-family: $font-semi;
@@ -95,9 +96,24 @@ p{
   animation: bannerCarousel 180s linear infinite;
   color: $light-blue;
   background: $white;
-  font-weight: 800;
+  font-family: $font-bold;
 }
 
 #features{
     background: $light-blue;
+}
+
+.videoBg{
+    background: $bg;
+}
+
+.installBgSection{
+    background: $light-blue ;
+}
+
+li {
+  border-bottom: 1px solid #fefefe;
+  font-size: 24px;
+  font-family: $font-semi;
+  color: $white;
 }
