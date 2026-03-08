@@ -12,7 +12,7 @@ interface StepsProps {
 export default function Steps({ steps, image, open, toggleOpen }: StepsProps) {
 
     return (
-        <div className="px-[3%] sm:px-0">
+        <div className="sm:px-0">
             <div className="group flex flex-col xl:flex-row w-full justify-between py-8 gap-8 border-b cursor-pointer text-white guide" onClick={toggleOpen}>
                 <div className="flex flex-row items-center justify-between w-full">
                     <h2 className="leading-none tracking-tighter text-[24px] md:text-[32px]">

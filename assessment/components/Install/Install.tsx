@@ -21,18 +21,17 @@ export default function Install() {
             <div className="flex flex-col w-full h-full">
                 <div className="block h-[100px] sm:h-[180px] md:h-[200px] lg:h-[250px] xl:h-[400px] " />
                 <div className="relative z-10 installSection h-full flex justify-center px-[5%]">
-                    <div className="max-w-[1520px] flex flex-col w-full h-fit px-[5%] sm:px-0 ">
+                    <div className="max-w-[1520px] flex flex-col w-full h-fit sm:px-0 ">
                         <div className="flex justify-center text-center">
                             <h1 className="text-[32px] md:text-[64px] tracking-tighter leading-none">TRADE LIKE A PRO IN MINUTES</h1>
                         </div>
                         <div className="w-full h-full py-[60px] sm:py-20 flex flex-row gap-20">
-                            
                             <div className="hidden xl:flex relative w-full h-[500px] guideBg">
                                 <Image
                                     src={stepsData[currentIndex].image}
                                     alt={`Step ${currentIndex + 1}`}
                                     fill
-                                    className="w-full h-full object-contain px-8 py-8 "
+                                    className="w-full h-full object-contain px-8 py-8"
                                     loading="lazy"
                                 />
                             </div>
