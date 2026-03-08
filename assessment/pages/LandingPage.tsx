@@ -5,6 +5,7 @@ import Counter from "@/ultis/PromotionCounter/Countdown"
 import Hero from "@/components/Hero/Hero";
 import Banner from "@/components/Banner/Banner";
 import Features from "@/components/Features/Features";
+import Install from "@/components/Install/Install";
 
 export default function LandingPage() {
     return (
@@ -14,6 +15,7 @@ export default function LandingPage() {
             <Hero/>
             <Banner/>
             <Features/>
+            <Install/>
         </main>
     )
 }
