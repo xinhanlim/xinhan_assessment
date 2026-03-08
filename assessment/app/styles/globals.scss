@@ -51,3 +51,25 @@ p{
     color:$grey;
     font-style: italic;
 }
+
+
+@keyframes bannerCarousel {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.bannerCarousel {
+  display: flex;
+  width: max-content;
+  animation: bannerCarousel 180s linear infinite;
+  color: $bg;
+  background: $white;
+  padding: 16px 16px;
+  font-size: 64px;
+  font-weight: 800;
+
+}
