@@ -14,16 +14,18 @@ export default function Install() {
     ]
 
     return (
-        <div className="flex justify-center w-full h-full items-center">
-            <div className="absolute inset-0 relative w-full h-screen installBgSection">
+        <section className="flex justify-center relative w-full h-full items-center">
+            <div className="absolute inset-0 w-full h-screen installBgSection">
                 <Image src="/images/bg/bg-1.png" alt="image of wave-1" loading="lazy" fill className="object-contain object-top" />
-                <div className="block h-[90px] sm:h-[180px] md:h-[200px] lg:h-[250px] xl:h-[400px]" />
-                <div className="relative z-10 installSection h-full flex justify-center">
-                    <div className="max-w-[1520px] flex flex-col w-full px-[5%] sm:px-0 ">
-                        <div className="flex justify-center">
+            </div>
+            <div className="flex flex-col w-full h-full">
+                <div className="block h-[100px] sm:h-[180px] md:h-[200px] lg:h-[250px] xl:h-[400px] " />
+                <div className="relative z-10 installSection h-full flex justify-center px-[5%]">
+                    <div className="max-w-[1520px] flex flex-col w-full h-fit px-[5%] sm:px-0 ">
+                        <div className="flex justify-center text-center">
                             <h1 className="text-[32px] md:text-[64px] tracking-tighter leading-none">TRADE LIKE A PRO IN MINUTES</h1>
                         </div>
-                        <div className="w-full h-full py-20 flex flex-row gap-20">
+                        <div className="w-full h-full py-[60px] sm:py-20 flex flex-row gap-20">
                             <div className="flex flex-col w-full ">
                                 {stepsData.map((steps, index) => (
                                     <Steps
@@ -57,11 +59,11 @@ export default function Install() {
                                 />
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
+
+        </section>
 
     )
 }
