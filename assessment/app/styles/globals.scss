@@ -9,8 +9,13 @@ $orange: #F37406;
 $bg: #3A53BA;
 $white: #fefefe;
 $grey:#d8d8d8;
+$black:#282828;
 $font-bold: "RotisBold", sans-serif;
 $font-semi: "RotisSemiBold", sans-serif;
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 
 html, body {
@@ -123,4 +128,10 @@ li {
     font-size: 24px;
     font-family: $font-semi;
     color: $white;
+}
+
+.closeBtn{
+    font-size: 24px;
+    font-family: $font-semi;
+    color: $black;
 }
