@@ -1,21 +1,7 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: "RotisBold";
-    src: url("/fonts/ATRotisSemiSans.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: "RotisSemiBold";   
-    src: url("/fonts/ATRotisSemiSans.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-}
-
-
+$font-bold: var(--font-rotis-bold);
+$font-semi: var(--font-rotis-semi);
 $dark-blue: #01f2f2;
 $light-blue: #112a4d;
 $gold: #f2df79;
@@ -66,7 +52,7 @@ h1{
 
 h2{
     color:$white;
-    font-family: $font-bold;
+    font-family: $font-semi;
 }
 
 
@@ -80,6 +66,10 @@ p{
     font-style: italic;
 }
 
+.guide{
+    color:$white;
+    font-family: $font-semi;
+}
 
 @keyframes bannerCarousel {
   0% {
@@ -115,6 +105,10 @@ p{
     background: $bg ;
 }
 
+.guideBg{
+    background: $light-blue;
+    border: 1px solid $white;
+}
 
 li {
   border-bottom: 1px solid #fefefe;
