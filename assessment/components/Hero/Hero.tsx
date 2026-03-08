@@ -8,7 +8,7 @@ import RightArrow from "../IconSVG/Arrow"
 export default function Hero() {
     return (
         <section id="hero" className="relative flex justify-center px-[5%] w-full h-full">
-            <div className=" flex flex-col sm:flex-row w-full xl:w-[1530px] h-[800px] sm:h-screen flex pt-[60px] md:pt-[150px] justify-between ">
+            <div className=" flex flex-col sm:flex-row w-full xl:w-[1520px] h-[800px] sm:h-screen flex py-[60px] md:pt-[150px] justify-between ">
                 <div className="relative flex flex-col md:flex-col tracking-tighter leading-none gap-4 max-w-[700px]">
                     <h1 className="z-10 text-[32px] md:text-[64px] tracking-tighter leading-none uppercase">
                         COPY TRADING WITH BACKWELL INVEST
@@ -28,7 +28,7 @@ export default function Hero() {
                     <div className="z-10 flex flex-col md:flex-col tracking-tighter leading-none gap-4 max-w-[700px]">
 
                         <h1 className=" text-[32px] md:text-[64px] tracking-tighter leading-none uppercase ">
-                            Choose & Trade 
+                            Choose & Trade
                             <span className="z-20 relative inline-block gap-2  ">
                                 Ready-To-Go Strategies
                                 <Image
@@ -48,10 +48,19 @@ export default function Hero() {
                                 <ClassLabels name="Oil" color="#fefefe" />
                                 <ClassLabels name="Indices" color="#fefefe" />
                             </div>
-                            <Link href="/" className="cta-register group flex flex-row items-center gap-2 w-fit">
-                                REGISTER
-                                <RightArrow />
-                            </Link>
+                            <div className="flex flex-row gap-2 ">
+                                <Link href="/" className="cta-register group flex flex-row items-center gap-2 w-fit">
+                                    REGISTER
+                                    <RightArrow />
+                                </Link>
+                                <Link href="https://apps.apple.com/au/app/blackwell-invest/id1666036351" target="_blank" rel="noopener noreferrer" className="relative cta-register group flex flex-row items-center gap-2 w-fit">
+                                    <Image src="/images/app-store.jpg" alt="image of apple" width={100} height={100} className="object-cover"/>
+                                </Link>
+                                <Link href="https://play.google.com/store/apps/details?id=com.BlackwellGlobalInvestmentsUKLimited.pelican&hl=en_SG" target="_blank" rel="noopener noreferrer" className="relative cta-register group flex flex-row items-center gap-2 w-fit">
+                                     <Image src="/images/google-play.jpg" alt="image of apple" width={100} height={100} className="object-cover"/>
+                                </Link>
+                            </div>
+
                             <p className="information">When you invest, your capital is at risk. Be prudent.</p>
                         </div>
 
