@@ -12,9 +12,9 @@ const rotisBold = localFont({
   variable: "--font-rotis-bold",
 });
 
-const rotisLight = localFont({
+const rotisSemi = localFont({
   src: "./fonts/ATRotisSemiSans.ttf",
-  variable: "--font-rotis-light",
+  variable: "--font-rotis-semi",
 });
 
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${rotisBold.variable} ${rotisLight.variable}`}
+        className={`antialiased ${rotisBold.variable} ${rotisSemi.variable}`}
         
       >
         {children}
