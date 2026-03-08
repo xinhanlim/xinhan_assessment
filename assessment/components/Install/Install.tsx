@@ -26,9 +26,6 @@ export default function Install() {
                             <h1 className="text-[32px] md:text-[64px] tracking-tighter leading-none">TRADE LIKE A PRO IN MINUTES</h1>
                         </div>
                         <div className="w-full h-full py-[60px] sm:py-20 flex flex-row gap-20 ">
-                            <div>
-                                
-                            </div>
                             <div className="hidden xl:flex relative w-full h-[500px] guideBg">
                                 <Image
                                     src={stepsData[currentIndex].image}
