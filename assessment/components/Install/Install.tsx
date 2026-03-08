@@ -26,6 +26,16 @@ export default function Install() {
                             <h1 className="text-[32px] md:text-[64px] tracking-tighter leading-none">TRADE LIKE A PRO IN MINUTES</h1>
                         </div>
                         <div className="w-full h-full py-[60px] sm:py-20 flex flex-row gap-20">
+                            
+                            <div className="hidden xl:flex relative w-full h-[500px] guideBg">
+                                <Image
+                                    src={stepsData[currentIndex].image}
+                                    alt={`Step ${currentIndex + 1}`}
+                                    fill
+                                    className="w-full h-full object-contain"
+                                    loading="lazy"
+                                />
+                            </div>
                             <div className="flex flex-col w-full ">
                                 {stepsData.map((steps, index) => (
                                     <Steps
@@ -48,15 +58,6 @@ export default function Install() {
                                     </div>
 
                                 </div>
-                            </div>
-                            <div className="hidden xl:flex relative w-full h-[500px] guideBg">
-                                <Image
-                                    src={stepsData[currentIndex].image}
-                                    alt={`Step ${currentIndex + 1}`}
-                                    fill
-                                    className="w-full h-full object-contain"
-                                    loading="lazy"
-                                />
                             </div>
                         </div>
                     </div>
