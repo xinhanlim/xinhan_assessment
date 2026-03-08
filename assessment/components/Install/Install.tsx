@@ -25,7 +25,10 @@ export default function Install() {
                         <div className="flex justify-center text-center">
                             <h1 className="text-[32px] md:text-[64px] tracking-tighter leading-none">TRADE LIKE A PRO IN MINUTES</h1>
                         </div>
-                        <div className="w-full h-full py-[60px] sm:py-20 flex flex-row gap-20">
+                        <div className="w-full h-full py-[60px] sm:py-20 flex flex-row gap-20 ">
+                            <div>
+                                
+                            </div>
                             <div className="hidden xl:flex relative w-full h-[500px] guideBg">
                                 <Image
                                     src={stepsData[currentIndex].image}
@@ -35,7 +38,7 @@ export default function Install() {
                                     loading="lazy"
                                 />
                             </div>
-                            <div className="flex flex-col w-full ">
+                            <div className="flex flex-col w-full gap-8">
                                 {stepsData.map((steps, index) => (
                                     <Steps
                                         key={index}
@@ -45,7 +48,7 @@ export default function Install() {
                                         toggleOpen={() => setCurrentIndex(index)}
                                     />
                                 ))}
-                                <div className="flex flex-col py-8 gap-4 px-[5%] sm:px-0">
+                                <div className="flex flex-col gap-4 px-[5%] sm:px-0">
                                     <h2 className="text-[24px] tracking-tighter leading-none">GET IT ON APP STORES / GOOGLE PLAY STORES</h2>
                                     <div className="flex flex-row gap-4">
                                         <Link href="https://apps.apple.com/au/app/blackwell-invest/id1666036351" target="_blank" rel="noopener noreferrer" className="relative cta-register group flex flex-row items-center gap-2 w-fit">
