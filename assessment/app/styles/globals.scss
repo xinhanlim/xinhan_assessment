@@ -61,10 +61,6 @@ h2{
 }
 
 
-p{
-    color:$white;
-    font-family: $font-semi;
-}
 
 .information{
     color:$grey;
@@ -134,4 +130,22 @@ li {
     font-size: 24px;
     font-family: $font-semi;
     color: $black;
+}
+
+.toastText{
+  font-size: 16px;
+  font-family: $font-semi;
+  color: $black;
+}
+
+.formText{
+  font-family: $font-semi;
+  color: $black;
+}
+
+.mobileOverlay{
+    font-family: $font-bold;
+    color: $white;
+    background: $light-blue;
+    font-size: 40px;
 }
