@@ -18,7 +18,7 @@ export default function Steps({ steps, image, open, toggleOpen }: StepsProps) {
                     <h2 className="leading-none tracking-tighter text-[24px] md:text-[32px]">
                         {steps}
                     </h2>
-                    <RightArrow />
+                    <RightArrow width="16" height="16"/>
                 </div>
                 {open && (
                     <div className="xl:hidden guideBg relative w-full h-[500px] items-center">
