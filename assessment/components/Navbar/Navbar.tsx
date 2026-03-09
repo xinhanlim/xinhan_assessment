@@ -89,7 +89,7 @@ export default function Navbar() {
 
                 {/* DESKTOP */}
                         {user ? (
-                            <div className="flex flex-col md:flex-row items-center justify-between h-full gap-8">
+                            <div className="md:flex flex-col md:flex-row items-center justify-between h-full gap-8 hidden">
                                 <p className="text-[24px] min-w-fit tracking-tighter leading-none ">Welcome, {user.firstName} {user.lastName}</p>
                                 <button
                                     onClick={handleLogout}
@@ -100,7 +100,7 @@ export default function Navbar() {
                                 </button>
                             </div>
                         ) : (
-                            <div className="flex flex-row">
+                            <div className="md:flex flex-row hidden">
                                 <button
                                     onClick={() => openModal("login")}
                                     className="group cta-register flex flex-row justify-between items-center gap-2 cursor-pointer border-b"
