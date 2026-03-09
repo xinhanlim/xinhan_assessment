@@ -19,7 +19,7 @@ export default function Install() {
                 <Image src="/images/bg/bg-1.png" alt="image of wave-1" loading="lazy" fill className="object-contain object-top" />
             </div>
             <div className="flex flex-col w-full h-full">
-                <div className="block h-[100px] sm:h-[180px] md:h-[200px] lg:h-[250px] xl:h-[400px] " />
+                <div className="block h-[90px] sm:h-[170px] md:h-[200px] lg:h-[250px] xl:h-[300px] 2xl:h-[420px]" />
                 <div className="relative z-10 installSection h-full flex justify-center px-[5%]">
                     <div className="max-w-[1520px] flex flex-col w-full h-fit sm:px-0 ">
                         <div className="flex justify-center text-center">
