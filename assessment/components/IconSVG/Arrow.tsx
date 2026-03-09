@@ -2,15 +2,17 @@
 
 type RightArrowProps = {
   currentColor?: string;
+  width?: string;
+  height?: string;
 };
 
-export default function RightArrow({ currentColor = 'currentColor' }: RightArrowProps) {
+export default function RightArrow({ currentColor = 'currentColor' , width = 'width', height = 'height' }: RightArrowProps) {
   return (
     <svg
       className="transform -rotate-90 group-hover:-rotate-45 transition-transform duration-300"
       xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill={currentColor}
     >
