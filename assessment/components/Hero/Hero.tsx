@@ -51,7 +51,7 @@ export default function Hero() {
                             <div className="flex flex-row gap-2 ">
                                 <Link href="/" className="cta-register group flex flex-row items-center gap-2 w-fit">
                                     REGISTER
-                                    <RightArrow />
+                                    <RightArrow width="16" height="16"/>
                                 </Link>
                                 <Link href="https://apps.apple.com/au/app/blackwell-invest/id1666036351" target="_blank" rel="noopener noreferrer" className="relative cta-register group flex flex-row items-center gap-2 w-fit">
                                     <Image src="/images/appstore/app-store.jpg" alt="image of apple" width={100} height={100} className="object-cover"/>
