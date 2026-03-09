@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import './styles/globals.scss'
 import localFont from "next/font/local";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,9 +28,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`antialiased ${rotisBold.variable} ${rotisSemi.variable}`}
-        
       >
         {children}
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 6000,
+          }}
+        />
       </body>
     </html>
   );
