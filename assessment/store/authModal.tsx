@@ -1,10 +1,14 @@
 'use client'
-import LoginForm from "@/components/LoginForm";
+import LoginForm from "@/components/Auth/LoginForm";
 import { useAuth } from "./authStore"
-import SignupForm from "@/components/SignupForm";
+import SignupForm from "@/components/Auth/SignupForm";
+
+interface AuthModalProps {
+    closeOverlay: () => void;
+}
 
 
-export default function AuthModal() {
+export default function AuthModal({closeOverlay}: AuthModalProps) {
     const { open, mode, closeModal } = useAuth();
     if (!open) {
         return null
@@ -14,9 +18,8 @@ export default function AuthModal() {
         <div className="fixed inset-0 bg-black/95 z-999 cursor-pointer flex justify-center items-center">
             <div className="relative w-[1520px] h-screen flex flex-col">
                 <div className="flex justify-center w-full h-full items-center cursor-default px-[5%] sm:px-[20%] py-[5%] sm:py-[8%]">
-                    <div className="w-full h-full bg-white rounded-md px-8 py-8">
-                        <button onClick={closeModal} className="py-2 px-4 closeBtn cursor-pointer flex justify-end"> X </button>
-                        {mode === "login" ? <LoginForm/> : <SignupForm/>}
+                    <div className="w-full h-full bg-white rounded-md px-4 py-4">
+                        {mode === "login" ? <LoginForm closeModal={closeModal} closeOverlay={closeOverlay}/> : <SignupForm closeModal={closeModal} closeOverlay={closeOverlay}/>}
                     </div>
                 </div>
             </div>
