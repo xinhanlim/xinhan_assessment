@@ -61,10 +61,10 @@ export default function Features() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col sm:flex-row w-full xl:w-[1520px] sm:h-full flex justify-between ">
-                <div className="flex flex-col  gap-[60px]  w-full h-full">
+            <div className="flex flex-col sm:flex-row w-full 2xl:w-[1520px] sm:h-full justify-between ">
+                <div className="flex flex-col gap-[60px] w-full h-full">
                     <h1 className=" text-[24px] md:text-[64px] tracking-tighter leading-none ">FEATURES - EASY ANALYSIS</h1>
-                    <div className="flex flex-col-reverse sm:flex-row justify-between gap-[60px]">
+                    <div className="flex flex-col-reverse sm:flex-row justify-between gap-[60px] w-full">
                         <div className="w-full h-full">
                             <p>Instant clarity on the Masters’ profile. Get a snapshot of their trade history, profitability, risk, and portfolio all in one place. </p>
                         </div>
