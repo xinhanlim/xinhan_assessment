@@ -1,12 +1,17 @@
 'use client';
 
-type RightArrowProps = {
+import React from 'react';
+
+type ArrowProps = React.SVGProps<SVGSVGElement> & {
   currentColor?: string;
-  width?: string;
-  height?: string;
 };
 
-export default function RightArrow({ currentColor = 'currentColor' , width = 'width', height = 'height' }: RightArrowProps) {
+export default function Arrow({
+  currentColor = 'currentColor',
+  width = '24',
+  height = '24',
+  ...props
+}: ArrowProps) {
   return (
     <svg
       className="transform -rotate-90 group-hover:-rotate-45 transition-transform duration-300"
@@ -15,6 +20,7 @@ export default function RightArrow({ currentColor = 'currentColor' , width = 'wi
       height={height}
       viewBox="0 0 24 24"
       fill={currentColor}
+      {...props}
     >
       <path d="M17 15.586 6.707 5.293 5.293 6.707 15.586 17H7v2h12V7h-2v8.586z" />
     </svg>
