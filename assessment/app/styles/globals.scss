@@ -88,6 +88,17 @@ h2{
   color: $light-blue;
   background: $white;
   font-family: $font-bold;
+  border: 1px solid $light-blue;
+}
+
+.bannerRevCarousel {
+  display: flex;
+  width: max-content;
+  animation: bannerCarousel 180s linear infinite reverse;
+  color: $light-blue;
+  background: $white;
+  font-family: $font-bold;
+   border: 2px solid $light-blue;
 }
 
 #features{
@@ -96,6 +107,7 @@ h2{
 
 .videoBg{
     background: $bg;
+    border-radius: 6px;
 }
 
 .installBgSection{
@@ -109,6 +121,7 @@ h2{
 .guideBg{
     background: $light-blue;
     border: 1px solid $white;
+    border-radius: 6px;
 }
 
 li {
@@ -121,9 +134,9 @@ li {
 .cardGuide{
     border: 1px solid #fefefe;
     border-radius: 8px;
-    font-size: 24px;
     font-family: $font-semi;
     color: $white;
+    background: $light-blue;
 }
 
 .closeBtn{
