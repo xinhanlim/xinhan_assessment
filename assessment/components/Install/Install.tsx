@@ -20,12 +20,12 @@ export default function Install() {
             </div>
             <div className="flex flex-col w-full h-full">
                 <div className="block h-[90px] sm:h-[170px] md:h-[200px] lg:h-[250px] xl:h-[300px] 2xl:h-[420px]" />
-                <div className="relative z-10 installSection h-full flex justify-center px-[5%]">
+                <div className="relative z-10 installSection h-full flex justify-center px-[5%] pb-20">
                     <div className="max-w-[1520px] flex flex-col w-full h-fit sm:px-0 ">
                         <div className="flex justify-center text-center">
                             <h1 className="text-[32px] md:text-[64px] tracking-tighter leading-none">TRADE LIKE A PRO IN MINUTES</h1>
                         </div>
-                        <div className="w-full h-full py-[60px] sm:py-20 flex flex-row gap-20 ">
+                        <div className="w-full h-full py-[60px]  flex flex-row gap-20 ">
                             <div className="hidden xl:flex relative w-full h-[500px] guideBg">
                                 <Image
                                     src={stepsData[currentIndex].image}
