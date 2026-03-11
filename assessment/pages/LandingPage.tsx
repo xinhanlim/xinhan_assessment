@@ -9,6 +9,7 @@ import Install from "@/components/Install/Install";
 import SlideSection from "@/components/Install/SlideSection";
 import RevBanner from "@/components/Banner/RevBanner";
 import ChooseUs from "@/components/Why/ChooseUs";
+import Navigate from "@/components/Navigate/Navigate";
 
 export default function LandingPage() {
     return (
@@ -21,6 +22,7 @@ export default function LandingPage() {
             <Install/>
             <SlideSection/>
             <ChooseUs/>
+            <Navigate/>
             <RevBanner/>
         </main>
     )
