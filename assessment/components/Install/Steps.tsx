@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import RightArrow from "../IconSVG/Arrow";
+import Arrow from "../IconSVG/Arrow";
 
 interface StepsProps {
     steps: string;
@@ -18,7 +18,7 @@ export default function Steps({ steps, image, open, toggleOpen }: StepsProps) {
                     <h2 className="leading-none tracking-tighter text-[24px] md:text-[32px]">
                         {steps}
                     </h2>
-                    <RightArrow width="16" height="16"/>
+                    <Arrow width="16" height="16"/>
                 </div>
                 {open && (
                     <div className="xl:hidden guideBg relative w-full h-[500px] items-center">
