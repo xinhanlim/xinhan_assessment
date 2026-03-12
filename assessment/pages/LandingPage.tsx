@@ -10,12 +10,13 @@ import SlideSection from "@/components/Install/SlideSection";
 import RevBanner from "@/components/Banner/RevBanner";
 import ChooseUs from "@/components/Why/ChooseUs";
 import Navigate from "@/components/Navigate/Navigate";
+import Enquire from "@/components/Enquire/Enquire";
 
 export default function LandingPage() {
     return (
         <main className="flex flex-col">
             <Navbar />
-            <Counter endDate="14 Mar, 2026" />
+            <Counter endDate="14 Mar, 2028" />
             <Hero/>
             <Banner/>
             <Features/>
@@ -24,6 +25,7 @@ export default function LandingPage() {
             <ChooseUs/>
             <Navigate/>
             <RevBanner/>
+            <Enquire/>
         </main>
     )
 }
