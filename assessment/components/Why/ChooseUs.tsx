@@ -31,7 +31,7 @@ export default function ChooseUs() {
 
     return (
 
-        <div className="relative w-full min-h-[800px] md:min-h-[1000px] xl:min-h-[1200px] px-[5%] flex justify-center">
+        <div id="choose" className="relative w-full min-h-[800px] md:min-h-[1000px] xl:min-h-[1200px] px-[5%] flex justify-center">
             <Image src="/images/bg/bg-2.png" alt="background" fill className="w-full h-full object-contain object-top" />
             <div className="z-20 w-[1520px]">
                 <div className="relative flex flex-col w-full h-fit justify-center pt-[120px] sm:pt-[160px] md:pt-[180px] xl:pt-[320px] gap-8 md:gap-16 ">
