@@ -47,19 +47,22 @@ export default function Navigate() {
     const [activeTab, setActiveTab] = useState(0)
 
     return (
-        <section className="flex justify-center relative w-full h-[1100px] px-[5%] ">
+    <section className="flex justify-center relative w-full h-[1100px] 2xl:h-[1100px] px-[5%] ">
             <div className="absolute inset-0 w-full h-[1100px]">
                 <Image src="/images/bg/bg-3.png" alt="image of wave-1" loading="lazy" fill className="object-cover w-full h-full object-top" />
             </div>
-            <div className="relative z-10 w-[1520px] pt-[200px] flex flex-col items-start h-screen">
-                <h1 className="pb-30 text-[64px] leading-none tracking-tighter text-center w-full uppercase">Navigate Our App in 5 Mins</h1>
+            <div>
+                
+            </div>
+            <div className="relative z-10 w-[1520px] pt-[200px] 2xl:pt-[300px] flex flex-col items-start h-screen">
+                <h1 className="pb-30 text-[32px] md:text-[64px] leading-none tracking-tighter text-center w-full uppercase">Navigate Our App in 5 Mins</h1>
                 <div className="flex flex-row w-fit">
                     {tabsData.map((tabs, index) => (
                         <div key={index} className="flex-row flex w-full">
                             <div className="flex flex-row">
                                 <button
                                     onClick={() => { setActiveTab(index) }}
-                                    className={`relative w-16 h-16 rounded-t-lg ${activeTab === index ? "bg-yellow-500" : "bg-black"}`}
+                                    className={`relative w-16 h-16 rounded-t-lg ${activeTab === index ? "bg-[#f2df79] " : "bg-white"}`}
                                 >
                                     <Image src={activeTab === index ? tabs.iconsActive : tabs.icons}
                                         alt={tabs.title} fill className="object-contain" />
@@ -68,10 +71,10 @@ export default function Navigate() {
                         </div>
                     ))}
                 </div>
-                    <div className="flex flex-col md:flex-row  items-center justify-between w-full bg-yellow-500 px-8 py-8 rounded-b-sm rounded-r-sm">
-                        <div className="flex flex-col justify-center ">
-                            <p className="">{tabsData[activeTab].title}</p>
-                            <p className="">{tabsData[activeTab].description}</p>
+                    <div className="flex flex-col md:flex-row  items-center justify-between w-full bg-[#f2df79] px-8 py-8 rounded-b-sm rounded-r-sm">
+                        <div className="flex flex-col justify-center gap-4 px-[2%]">
+                            <p className="navigateHeader tracking-tighter leading-none text-[32px]">{tabsData[activeTab].title}</p>
+                            <p className="navigateText tracking-tighter leading-none ">{tabsData[activeTab].description}</p>
                         </div>
                         <div className="relative w-[300px] h-[300px] md:w-[500px] ">
                             <Image
