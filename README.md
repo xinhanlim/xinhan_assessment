@@ -5,6 +5,7 @@ XINHAN - TAST ASSESSMENT
 ```bash
 cd xinhan_assessment
 cd assessment
+npm install
 npm run dev
 
 Open browser
