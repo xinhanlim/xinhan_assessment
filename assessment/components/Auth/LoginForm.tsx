@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../store/authStore"
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 interface loginFormProps {
     closeModal: () => void;
@@ -25,7 +26,9 @@ export default function LoginForm({ closeModal, closeOverlay }: loginFormProps) 
     return (
         <>
             <div className="flex flex-row w-full justify-between items-center px-[4%]">
-                <p className="text-[32px]">LOG IN</p>
+                <div className="relative w-[150px] h-[100px] sm:w-[200px] sm:h-[60px] ">
+                    <Image src="/images/BWlogo.png" alt="logo image" fill className="object-cover w-full h-full" />
+                </div>
                 <button onClick={closeModal} className="closeBtn cursor-pointer"> x </button>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col px-[4%] h-full gap-8 justify-center items-center">
@@ -34,12 +37,12 @@ export default function LoginForm({ closeModal, closeOverlay }: loginFormProps) 
                         <p>Email: </p>
                         <input {...register("email")}
                             placeholder="Enter Your Email"
-                            className="border rounded-sm px-4 py-4 "
+                            className="loginInput"
                         />
                     </div>
                     <div className="flex flex-col w-full gap-2 ">
                         <p>Password: </p>
-                        <input {...register("password")} type="password" placeholder="Password" className="border rounded-sm px-4 py-4 " />
+                        <input {...register("password")} type="password" placeholder="Password" className="loginInput" />
 
                     </div>
                     <button type="submit" className="py-4 rounded-sm bg-blue-200 cursor-pointer">Login</button>
