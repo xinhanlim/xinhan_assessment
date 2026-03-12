@@ -14,7 +14,7 @@ export default function Container({ title, description, open, onToggle, }: Conta
 
     return (
         <div className="w-full h-full">
-            <button onClick={onToggle} className="w-full h-full cursor-pointer flex flex-col py-8 border-b">
+            <button onClick={onToggle} className="w-full h-full cursor-pointer flex flex-col py-8 border-b border-white">
                 <div className=" group flex flex-row w-full h-full items-center justify-between">
                     <h1 className="text-[32px] md:text-[64px] tracking-tighter leading-none">{title}</h1>
                     <p className="px-2 items-center">{open ? "-" : "+"} </p>

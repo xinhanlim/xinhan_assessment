@@ -27,7 +27,7 @@ export default function SlideSection() {
     }
 
     return (
-        <section className="relative flex flex-col justify-center w-full h-full items-center px-[5%] pb-20 gap-[60px]">
+        <section className="relative flex flex-col justify-center w-full h-full items-center px-[5%] pb-20 gap-[60px] installSection">
             <h1 className="text-[32px] md:text-[64px] tracking-tighter leading-none">HOW TO LINK A MT4 ACCOUNT</h1>
             <div className=" relative max-w-[1520px] w-full h-[60vh] lg:h-[70vh] cardGuide ">
                 <div className="w-full h-fit">

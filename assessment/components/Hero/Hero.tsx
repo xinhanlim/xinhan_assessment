@@ -4,8 +4,12 @@ import Image from "next/image"
 import Link from "next/link"
 import ClassLabels from "./ClassLabels"
 import RightArrow from "../IconSVG/Arrow"
+import { useAuth } from "@/store/authStore"
 
 export default function Hero() {
+
+    const { openModal } = useAuth();
+
     return (
         <section id="hero" className="relative flex justify-center px-[5%] w-full h-full">
             <div className=" flex flex-col xl:flex-row w-full xl:w-[1520px] h-[900px] lg:h-[1000px] flex py-[60px] xl:pt-[150px] justify-between ">
@@ -49,10 +53,10 @@ export default function Hero() {
                                 <ClassLabels name="Indices" color="#fefefe" />
                             </div>
                             <div className="flex flex-row gap-2 ">
-                                <Link href="/" className="cta-register group flex flex-row items-center gap-2 w-fit">
+                                <button onClick={() => openModal("signup")} className="cta-register group flex flex-row items-center gap-2 w-fit">
                                     REGISTER
                                     <RightArrow width="16" height="16"/>
-                                </Link>
+                                </button>
                                 <Link href="https://apps.apple.com/au/app/blackwell-invest/id1666036351" target="_blank" rel="noopener noreferrer" className="relative cta-register group flex flex-row items-center gap-2 w-fit">
                                     <Image src="/images/appstore/app-store.jpg" alt="image of apple" width={100} height={100} className="object-cover"/>
                                 </Link>
