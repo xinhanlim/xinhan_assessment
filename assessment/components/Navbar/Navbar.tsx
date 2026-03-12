@@ -11,9 +11,14 @@ import Image from "next/image"
 export default function Navbar() {
     const { open, openModal, user } = useAuth()
     const [mobileOpen, setMobileOpen] = useState(false)
+    const [desktopOpen, setDesktopOpen] = useState(false)
 
     const toggleMobileOpen = () => {
         setMobileOpen(!mobileOpen)
+    }
+
+    const toggleDesktopOpen = () => {
+        setDesktopOpen(!desktopOpen)
     }
 
 
@@ -21,6 +26,10 @@ export default function Navbar() {
         useAuth.getState().logout()
         toast.success("You have been logged out successfully")
         setMobileOpen(false)
+    }
+
+    const handleProfile = () => {
+        toast.error('IN CONSTRUCTION, NO PROFILE PAGE YET')
     }
 
     useEffect(() => {
@@ -61,7 +70,7 @@ export default function Navbar() {
                             <div className="flex flex-col justify-end h-[80vh] overflow-hidden ">
                                 {user ? (
                                     <div className="flex flex-col md:flex-row items-center justify-between h-full gap-8 pb-20">
-                                        <p className="text-[80px] w-full tracking-tighter leading-none ">Welcome, {user.firstName} {user.lastName}</p>
+                                        <p className="text-[80px] w-full tracking-tighter leading-none ">Hello, {user.firstName} {user.lastName}</p>
                                         <button
                                             onClick={handleLogout}
                                             className="cta-register w-full group flex flex-row items-center gap-2 text-[16px] cursor-pointer"
@@ -93,31 +102,67 @@ export default function Navbar() {
 
                         {/* DESKTOP */}
                         {user ? (
-                            <div className="md:flex flex-col md:flex-row items-center justify-between h-full gap-8 hidden">
-                                <p className="text-[24px] min-w-fit tracking-tighter leading-none ">Welcome, {user.firstName} {user.lastName}</p>
-                                <button
-                                    onClick={handleLogout}
-                                    className="cta-register group flex flex-row items-center gap-2 text-[16px] cursor-pointer"
-                                >
-                                    LOGOUT
-                                    <RightArrow width="16" height="16" />
-                                </button>
-                            </div>
-                        ) : (
-                            <div className="md:flex flex-row hidden ">
-                                <button
-                                    onClick={() => openModal("login")}
-                                    className="group cta-register flex flex-row justify-between items-center gap-2 cursor-pointer border-b"
-                                >
-                                    REGISTER
-                                    <RightArrow width="16" height="16" />
-                                </button>
-                            </div>
+                                <div className="relative md:flex flex-col md:flex-row items-center justify-between h-full gap-8 hidden">
+                                    <p className="text-[24px] min-w-fit tracking-tighter leading-none ">Hello, {user.firstName} {user.lastName}</p>
+                                    <button type="button"
+                                        aria-label={desktopOpen ? "Close Menu" : "Open Menu"}
+                                        aria-expanded={desktopOpen}
+                                        aria-controls="MENU"
+                                        onClick={toggleDesktopOpen}
+                                        className="relative overflow-hidden md:flex items-center justify-center hidden px-[5%]"
+                                    >
+                                        <span className="relative z-10 flex items-center uppercase cta-register justify-center font-medium min-w-[90px] cursor-pointer">
+                                            <span className={`${desktopOpen ? "absolute translate-y-20 opacity-100" : "translate-y-0 opacity-100"}`}>
+                                                menu
+                                            </span>
+                                            <span className={`${desktopOpen ? "translate-y-0 opacity-100" : "absolute translate-y-8 opacity-0"}`}>
+                                                close
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <div className={`absolute top-16 right-0 px-[5%] py-[5%] w-fit h-fit transition-all  ease-in duration-200 mobileOverlay
+                                                 ${desktopOpen ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0 pointer-events-none"}`}>
+                                        <div className="flex flex-col justify-end h-fit overflow-hidden ">
+                                             <button
+                                                onClick={handleProfile}
+                                                className="group flex flex-row items-center gap-2 text-[16px] cursor-pointer"
+                                            >
+                                                PROFILE
+                                                <RightArrow width="16" height="16" />
+                                            </button>
+                                            <button
+                                                onClick={handleLogout}
+                                                className="group flex flex-row items-center gap-2 text-[16px] cursor-pointer"
+                                            >
+                                                LOGOUT
+                                                <RightArrow width="16" height="16" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                    ) : (
+                                    <div className="md:flex flex-row hidden gap-4 ">
+                                        <button
+                                            onClick={() => openModal("login")}
+                                            className="group cta-register flex flex-row justify-between items-center gap-2 cursor-pointer border-b"
+                                        >
+                                            LOGIN
+                                            <RightArrow width="16" height="16" />
+                                        </button>
+                                        <button
+                                            onClick={() => openModal("signup")}
+                                            className="group cta-register flex flex-row justify-between items-center gap-2 cursor-pointer border-b"
+                                        >
+                                            REGISTER
+                                            <RightArrow width="16" height="16" />
+                                        </button>
+
+                                    </div>
                         )}
-                    </div>
-                </div>
-            </nav>
-            {open && <AuthModal closeOverlay={() => setMobileOpen(false)} />}
-        </>
-    )
+                                </div>
+                            </div>
+                    </nav>
+                    {open && <AuthModal closeOverlay={() => setMobileOpen(false)} />}
+                </>
+                )
 }
