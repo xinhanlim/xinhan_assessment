@@ -5,6 +5,8 @@ interface User {
     lastName: string;
     email: string;
     password: string;
+    mobile: string;
+    country: string;
 }
 
 interface AuthState {
@@ -32,14 +34,14 @@ export const useAuth = create<AuthState>((set, get) => ({
     login: async (email, password) => {
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
-        const {users} = get();
-        const existingUser = users.find((u)=>u.email === email)
+        const { users } = get();
+        const existingUser = users.find((u) => u.email === email)
 
-        if(!existingUser){
+        if (!existingUser) {
             throw new Error("Invalid Email/Password")
         }
 
-        if(existingUser.password !== password){
+        if (existingUser.password !== password) {
             throw new Error("Invalid Email/Password")
         }
 
@@ -56,11 +58,13 @@ export const useAuth = create<AuthState>((set, get) => ({
             throw new Error("Email Already Registered")
         }
 
-        const newUser= {
+        const newUser = {
             firstName: data.firstName,
             lastName: data.lastName,
             email: data.email,
             password: data.password,
+            mobile: data.mobile,
+            country: data.country
         }
 
         set({
